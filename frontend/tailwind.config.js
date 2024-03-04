@@ -1,12 +1,3 @@
-Cài đặt
-
-npm install -D tailwindcss
-
-npx tailwindcss init
-
-Ở các mục tailwind.config.js Nơi cấu hình chung cho toàn bộ CSS của dự án
-
-```js
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
@@ -33,19 +24,3 @@ module.exports = {
   },
   plugins: [],
 };
-```
-
-
-Ở file
-
-App.css cấu hình cho dự án
-```css
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Rubik&display=swap");
-
-```
-
-Bắt đầu tiến hành css

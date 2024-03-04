@@ -25,7 +25,9 @@ const CardList: React.FC<Props> = (props: Props): JSX.Element => {
                     );
                 })
             ) : (
-                <h1>No Result</h1>
+                <p className="mb-3 mt-3 text-xl font-semibold text-center md:text-xl">
+                    No results!
+                </p>
             )}
         </>
     );

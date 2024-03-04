@@ -23,7 +23,7 @@ Cú pháp nhanh tạo nội dung react cho 1 file
 
 traditional react = "rafce"
 
-typescript react = tsrafce
+typescript react = tsrafce - Tạo nhanh 1 file react ts
 
 
 
