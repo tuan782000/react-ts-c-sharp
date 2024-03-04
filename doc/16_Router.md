@@ -87,3 +87,8 @@ Các thành phần thẻ a sẽ được Chuyển thành thẻ Link và cho và 
 <Link to={`/company/${abc}`}>
 
 ```
+
+
+Outlet thường được sử dụng trong ngữ cảnh của Route để xác định nơi nội dung của các thành phần con sẽ được hiển thị.
+
+Outlet được sử dụng để đánh dấu nơi nội dung của các thành phần con (các Route con) sẽ được hiển thị. Các Route con có thể được đặt trong Outlet.
