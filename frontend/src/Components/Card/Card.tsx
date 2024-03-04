@@ -2,6 +2,7 @@ import React, { SyntheticEvent } from "react";
 import "./Card.css";
 import { CompanySearch } from "../../company";
 import AddPortfolio from "../Portfolio/AddPortfolio/AddPortfolio";
+import { Link } from "react-router-dom";
 
 // data check, spell check
 interface Props {
@@ -18,9 +19,12 @@ const Card: React.FC<Props> = (props: Props): JSX.Element => {
             key={id}
             id={id}
         >
-            <h2 className="font-bold text-center text-black md:text-left">
+            <Link
+                to={`/company/${searchResult.symbol}`}
+                className="font-bold text-center text-black md:text-left"
+            >
                 {searchResult.name} ({searchResult.symbol})
-            </h2>
+            </Link>
             <p className="text-black">{searchResult.currency}</p>
             <p className="font-bold text-black">
                 {searchResult.exchangeShortName} - {searchResult.stockExchange}
